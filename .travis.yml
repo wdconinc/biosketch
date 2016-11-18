@@ -1,0 +1,31 @@
+os: linux
+dist: trusty
+sudo: required
+language: ruby
+
+before_install:
+- sudo apt-get install -y pandoc rubber
+- sudo apt-get install -y texlive-fonts-recommended texlive-fonts-extra
+- sudo apt-get install -y texlive-latex-recommended texlive-latex-extra
+- sudo apt-get install -y texlive-science texlive-pictures
+- sudo apt-get install -y texlive-xetex
+- sudo apt-get install -y pdftk
+
+script:
+- rubber --pdf main.tex
+- pdftk cat main.pdf output 1-2 biosketch.pdf
+- pdftk cat main.pdf output 3-4 collaborators.pdf
+- pdftk cat main.pdf output 5-end bibliography.pdf
+
+deploy:
+  provider: releases
+  api_key:
+    secure: c42Ygc5l72reee2weXOpiFoNsOlJ6RJ46wdF9D++QqBzMLRrHL8luBET/GbGXRwhPohUFLun7RTsGlcyGLkqWNP/Aj7iVRoA/69LYNNKPrRAWAFAxiGN0OdY/w6YEj4wZ+UHe3DkOJ0WL69P9oS69glDT0pMdmNWLTC62DKPOt5NpAThgAhXv8MpeNWawq1Qv1eK/c2C4d7TJvlU7K4OqEY3wl5mXyakj2/hmuLG1vUJqxLAGgwI1KcvGQDjAe+tOeGPcSVTfYUD0RpCUDYbJWdEv1CzEmHj6OJrvsL3GVr/5Ti4AuZh/n9QkNztVg14DCuEIMmIdxoRElTF4Hv9gb3AK12KB4+aWMyXxsnqiUBmXSFSe2R9bHERJw942rekxrk4CZd9sghdSi30GjPJrzpzNPSePL7drQmrrDC8g4F5BiLfXVRcxu5ZWySnU+F6CNicyp35RitW1K/xQMOkZ3iIvS3Ko1it9CES5kZb7L50W0+8VObgqEOafREcMuE4Qzra6XDVwidKQXoR5aBscvDYiTatpKS1F3xsKfgzxNCyrFfDsjIEYhqUXYU12+4Vo8cymR2WA/8MtpwRPNMACijoSOWTGE4nOuu+rIkuHZHlS0B/Abyu7KNx1f/l1dU4qBYwrPN4vDbGHJtmmHcB0U3tiaclGyc2YrMnVfrAzc8=
+  file:
+  - main.pdf
+  - biosketch.pdf
+  - collaborators.pdf
+  - bibliography.pdf
+  skip_cleanup: true
+  on:
+    repo: wdconinc/biosketch
