@@ -13,9 +13,9 @@ before_install:
 
 script:
 - rubber --pdf main.tex
-- pdftk cat main.pdf output 1-2 biosketch.pdf
-- pdftk cat main.pdf output 3-4 collaborators.pdf
-- pdftk cat main.pdf output 5-end bibliography.pdf
+- pdftk main.pdf cat 1-2 output biosketch.pdf
+- pdftk main.pdf cat 3-4 output collaborators.pdf
+- pdftk main.pdf cat 5-end output bibliography.pdf
 
 deploy:
   provider: releases
