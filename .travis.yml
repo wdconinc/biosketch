@@ -12,7 +12,7 @@ before_install:
 - sudo apt-get install -y pdftk
 
 script:
-- pdflatex main.tex
+- rubber --pdf main.tex
 - pdftk main.pdf cat 1-2 output biosketch.pdf
 - pdftk main.pdf cat 3-4 output collaborators.pdf
 - pdftk main.pdf cat 5-end output bibliography.pdf
