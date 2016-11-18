@@ -38,89 +38,9 @@
 % (d) Synergistic Activities
 % A list of up to five examples that demonstrate the broader impact of the individual’s professional and scholarly activities that focuses on the integration and transfer of knowledge as well as its creation. Examples could include, among others: innovations in teaching and training (e.g., development of curricular materials and pedagogical methods); contributions to the science of learning; development and/or refinement of research tools; computation methodologies, and algorithms for problem-solving; development of databases to support research and education; broadening the participation of groups underrepresented in STEM; and service to the scientific and engineering community outside of the individual’s immediate organization.
 
-\documentclass[11pt,letterpaper]{article}
-\usepackage[utf8]{inputenc}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{plain}                                                      %%
-%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
-\setlength{\textwidth}{6.5in}     %%                                   %%
-\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
-\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
-\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
-\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
-\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
-\setlength{\headsep}{0in}         %%                                   %%
-\setlength{\footskip}{.5in}       %%                                   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
-\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
-\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Bibliography
-%%% BibLaTeX %%%
-%\usepackage[backend=bibtex,style=numeric]{biblatex}
-%\addbibresource{bibliography}
-%%% BibTeX %%%
-\usepackage[square,sort&compress,numbers]{natbib}
-\usepackage{bibentry}
-\nobibliography*
-
-% Hyperref for hyperlinks in the pdf file (load this package last)
-\usepackage{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Consistent notation of names of experiments
-\newcommand{\Hera}{\textsc{Hera}}
-\newcommand{\Hermes}{\textsc{Hermes}}
-\newcommand{\BaBar}{\textsc{BaBar}}
-\newcommand{\Qweak}{\texorpdfstring{$Q_{Weak}$}{Qweak}}
-\newcommand{\boldQweak}{\texorpdfstring{\boldmath$Q_{Weak}$}{Qweak}}
-\newcommand{\Moller}{\texorpdfstring{\textsc{Moller}}{MOLLER}}
-\newcommand{\JLab}{\texorpdfstring{\textsc{JLab}}{JLab}}
-\newcommand{\HIgS}{HI\texorpdfstring{$\gamma$}{g}S}
-
-% Abbreviations in italics
-\newcommand{\ie}{\textit{i.e.}}
-\newcommand{\eg}{\textit{e.g.}}
-\newcommand{\apriori}{\textit{a priori}}
-\newcommand{\etal}{\textit{et al.}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Opening
-\title{Biographical Sketch: Wouter Deconinck}
-\author{Wouter Deconinck}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
-
-% Your Bio should be divided into the following sections
-% (a) Professional Preparation (education):
-% Undergrad, Major, Year
-% Graduate, Major, Year
-% Postdoc, Area, Years-Inclusive
-% (b) Appointments:  most recent first.
-% (c) Products:  5 related to the proposal, and 5 "Other Significant Products"
-% (d) Synergistic Activities (math-enhancing activities that were not
-% part of your main job description, like editorial boards and
-% conference organizing - any Math-related volunteer work.
-% these are often similar to Broader Impacts
-
-% (e) Collaborators & Other Affiliations: (use the following sections)
-% list in alphabetical order, and include current affiliations parenthetically
-% Collaborators and Co-editors: past 48 months.  If none, write "none"
-% Graduate Advisors and Postdoctoral sponsors: (your own, no matter how long ago)
-% Thesis advisor and postgraduate scholar-sponsor:  those you have advised
-% in the past 5 years.  
-% Total number of graduate students advised: X (all time)
-% Total number of postdoctoral scholars sponsored: Y (all time)
-
 \section*{Biographical Sketch: Wouter Deconinck}
 
-\begin{tabular}{ll}
+\begin{tabular}{@{}ll}
 Address & College of William \& Mary, Department of Physics \\
         & P.O. Box 8795, Williamsburg, VA 23187 \\
 Phone   & (757) 221-3539 \\
@@ -131,15 +51,15 @@ Email   & wdeconinck@wm.edu \\
 
 \subsubsection*{Professional preparation}
 
-\textbf{Undergraduate institutions} \\
-University of Gent (Belgium), M.S. in Engineering Physics, July 2003 \\
-%
-\textbf{Graduate institutions} \\
-University of Michigan, Ph.D. in Physics, April 2008 \\
-%
-\textbf{Postdoctoral institutions} \\
-Deutsches Elektronen-Synchrotron (DESY, Germany), hadronic physics, January--May 2008 \\
-Massachusetts Institute of Technology, electroweak precision measurements, June 2008--June 2010
+\begin{tabular}{lll} % allow indentation of columns
+\multicolumn{3}{@{}l}{\bf Undergraduate institution:} \\
+University of Gent (Belgium) & Engineering Physics & M.S., July 2003 \\
+\multicolumn{3}{@{}l}{\bf Graduate institution:} \\
+University of Michigan & Physics & Ph.D., April 2008 \\
+\multicolumn{3}{@{}l}{\bf Postdoctoral institutions:} \\
+Deutsche Electronen-Synchrotron (Germany) & Hadronic Physics & January--May 2008 \\
+Massachusetts Institute of Technology & Electroweak Precision Tests & June 2008--June 2010
+\end{tabular}
 
 %---------------------------------------------------------------------------
 
@@ -161,32 +81,70 @@ Department of Physics, University of Michigan, Ann Arbor, MI
 
 \subsubsection*{Products closely related to the proposed project\footnotemark{}}
 
-\footnotetext{Due to the size of nuclear and high-energy physics collaborations it is not possible to list all collaborators and affiliations within the constraints of this document.  The full author lists are provided in the references.}
+\footnotetext{Due to the size of nuclear and high-energy physics collaborations it is not possible to list all collaborators and affiliations within the constraints of this document. The full author lists are provided in the references.}
 
 \begin{itemize}
  \setlength{\itemsep}{0pt}
  \setlength{\parskip}{0pt}
  \setlength{\parsep}{0pt}
- \item D.~Androic \etal~
-  \newblock First determination of the weak charge of the proton.
-  \newblock \emph{Phys. Rev. Lett.}, 111:\penalty0 141803, Oct 2013.
-  \cite{PhysRevLett.111.141803}.
- \item D.~Wang \etal~
-  \newblock Measurements of parity-violating asymmetries in electron-deuteron scattering in the nucleon resonance region.
-  \newblock \emph{Phys. Rev. Lett.}, 111:\penalty0 082501, Aug 2013.
-  \cite{Wang:2013kkc}.
- \item S.~Abrahamyan \etal~
-  \newblock Measurement of the neutron radius of $^{208}\mathrm{Pb}$ through parity violation in electron scattering.
-  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 112502, Mar 2012{\natexlab{a}}.
-  \cite{PhysRevLett.108.112502}.
- \item Z.~Ahmed \etal~
-  \newblock New precision limit on the strange vector form factors of the proton.
-  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 102001, Mar 2012.
-  \cite{PhysRevLett.108.102001}.
- \item S.~{Abeyratne} \etal~
-  \newblock {Science Requirements and Conceptual Design for a Polarized Medium Energy Electron-Ion Collider at Jefferson Lab}.
-  \newblock 2012.
-  \cite{Abeyratne:2012ah}. \label{eic}
+ % InspireHEP, CV format (LaTeX)
+
+ \item%{Magee:2016xqx}
+  {\bf ``A novel comparison of M{\o}ller and Compton electron-beam polarimeters''},
+  J.~A.~Magee {\it et al.},
+  arXiv:1610.06083 [physics.ins-det],
+  %JLAB-PHY-16-2333
+  %(Oct 19, 2016)
+  %\href{http://inspirehep.net/record/1492765}{HEP entry}
+  \cite{Magee:2016xqx}.
+
+ \item%{Androic:2013rhu}
+  {\bf ``First Determination of the Weak Charge of the Proton''},
+  D.~Androic {\it et al.} [Qweak Collaboration],
+  arXiv:1307.5275 [nucl-ex],
+  %DOI:10.1103/PhysRevLett.111.141803,
+  Phys.\ Rev.\ Lett.\  {\bf 111}, no. 14, 141803 (2013),
+  %JLAB-PHY-13-1756
+  %(Jul 19, 2013)
+  %\href{http://inspirehep.net/record/1243627}{HEP entry}
+  %76 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{Androic:2013rhu}.
+  
+ \item%{Allison:2014tpu}
+  {\bf ``The Q$_{weak}$ experimental apparatus''},
+  T.~Allison {\it et al.} [Qweak Collaboration],
+  arXiv:1409.7100 [physics.ins-det],
+  %DOI:10.1016/j.nima.2015.01.023,
+  Nucl.\ Instrum.\ Meth.\ A {\bf 781}, 105 (2015),
+  %JLAB-PHY-14-1959
+  %(Sep 24, 2014)
+  %\href{http://inspirehep.net/record/1318968}{HEP entry}
+  %11 citations counted in INSPIRE as of 12 Nov 2016
+  %\cite{Airapetian:2014gfp}
+  \cite{Allison:2014tpu}.
+
+ \item%{Wang:2014bba}
+  {\bf ``Measurement of parity violation in electron–quark scattering''},
+  D.~Wang {\it et al.} [PVDIS Collaboration],
+  %DOI:10.1038/nature12964,
+  Nature {\bf 506}, no. 7486, 67 (2014),
+  %(2014)
+  %\href{http://inspirehep.net/record/1280371}{HEP entry}
+  %26 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{Wang:2014bba}.
+
+ \item%{Abrahamyan:2012gp}
+  {\bf ``Measurement of the Neutron Radius of 208Pb Through Parity-Violation in Electron Scattering''},
+  S.~Abrahamyan {\it et al.},
+  arXiv:1201.2568 [nucl-ex],
+  %DOI:10.1103/PhysRevLett.108.112502,
+  Phys.\ Rev.\ Lett.\  {\bf 108}, 112502 (2012),
+  %JLAB-PHY-12-1480
+  %(Jan 2012)
+  %\href{http://inspirehep.net/record/1084413}{HEP entry}
+  %194 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{Abrahamyan:2012gp}.
+
 \end{itemize}
 
 %---------------------------------------------------------------------------
@@ -196,26 +154,65 @@ Department of Physics, University of Michigan, Ann Arbor, MI
  \setlength{\itemsep}{0pt}
  \setlength{\parskip}{0pt}
  \setlength{\parsep}{0pt}
- \item A.~Airapetian \etal~
-  \newblock {Multiplicities of charged pions and kaons from semi-inclusive deep-inelastic scattering by the proton and the deuteron}.
-  \newblock \emph{Phys.Rev.}, D87:\penalty0 074029, 2013.
-  \cite{PhysRevD.87.074029}.
- \item A.~Airapetian \etal~
-  \newblock {Beam-helicity asymmetry arising from deeply virtual Compton scattering measured with kinematically complete event reconstruction}.
-  \newblock \emph{JHEP}, 1210:\penalty0 042, 2012.
-  \cite{Airapetian:2012pg}.
- \item X.~Qian \etal~
-  \newblock {Single Spin Asymmetries in Charged Pion Production from Semi-Inclusive Deep Inelastic Scattering on a Transversely Polarized $^{3}\mathrm{He}$ Target at ${Q}^{2}=1.4\,2.7\,{\mathrm{GeV}}^{2}$}.
-  \newblock \emph{Phys. Rev. Lett.}, 107\penalty0 (7):\penalty0 072003, Aug 2011.
+ 
+ \item%{Abeyratne:2012ah}
+  {\bf ``Science Requirements and Conceptual Design for a Polarized Medium Energy Electron-Ion Collider at Jefferson Lab''},
+  S.~Abeyratne {\it et al.},
+  arXiv:1209.0757 [physics.acc-ph],
+  %JLAB-ACC-12-1619
+  %(Sep 2012)
+  %\href{http://inspirehep.net/record/1184353}{HEP entry}
+  %57 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{Abeyratne:2012ah}.
+
+ \item%{Qian:2011py}
+  {\bf ``Single Spin Asymmetries in Charged Pion Production from Semi-Inclusive Deep Inelastic Scattering on a Transversely Polarized $^3$He Target''},
+  X.~Qian {\it et al.} [Jefferson Lab Hall A Collaboration],
+  arXiv:1106.0363 [nucl-ex],
+  %DOI:10.1103/PhysRevLett.107.072003
+  Phys.\ Rev.\ Lett.\  {\bf 107}, 072003 (2011),
+  %JLAB-PHY-11-1332
+  %(Jun 2011)
+  %\href{http://inspirehep.net/record/902486}{HEP entry}
+  %144 citations counted in INSPIRE as of 12 Nov 2016
   \cite{PhysRevLett.107.072003}.
- \item J.~Huang \etal~
-  \newblock Beam-target double-spin asymmetry ${A}_{\mathrm{LT}}$ in charged pion production from deep inelastic scattering on a transversely polarized $^{3}\mathrm{He}$ target at $1.4 < {Q}^{2} < 2.7\,{\mathrm{GeV}}^{2}$.
-  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 052001, Jan 2012.
+
+ \item%{Ahmed:2011vp}
+  {\bf ``New Precision Limit on the Strange Vector Form Factors of the Proton''},
+  Z.~Ahmed {\it et al.} [HAPPEX Collaboration];
+  arXiv:1107.0913 [nucl-ex];
+  %DOI:10.1103/PhysRevLett.108.102001
+  Phys.\ Rev.\ Lett.\  {\bf 108}, 102001 (2012);
+  %JLAB-PHY-11-1479
+  %(Jul 2011)
+  %\href{http://inspirehep.net/record/916996}{HEP entry}
+  %69 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{PhysRevLett.108.102001}.
+
+ \item%{Huang:2011bc}
+  {\bf ``Beam-Target Double Spin Asymmetry A\_LT in Charged Pion Production from Deep Inelastic Scattering on a Transversely Polarized He-3 Target at 1.4<Q\textasciicircum{}2<2.7 GeV\textasciicircum{}2''},
+  J.~Huang {\it et al.} [Jefferson Lab Hall A Collaboration];
+  arXiv:1108.0489 [nucl-ex];
+  %DOI:10.1103/PhysRevLett.108.052001
+  Phys.\ Rev.\ Lett.\  {\bf 108}, 052001 (2012);
+  %JLAB-PHY-11-1359
+  %(Aug 2011)
+  %\href{http://inspirehep.net/record/921786}{HEP entry}
+  %46 citations counted in INSPIRE as of 12 Nov 2016
   \cite{PhysRevLett.108.052001}.
- \item Z.~W.~Zhao \etal~
-  \newblock {EM Calorimeters for SoLID at Jefferson Lab}.
-  \newblock \emph{Journal of Physics: Conference Series}, 404\penalty0 (1):\penalty0 012020, 2012.
-  \cite{1742-6596-404-1-012020}.
+
+ \item%{Narayan:2015aua}
+  {\bf ``Precision Electron-Beam Polarimetry at 1 GeV Using Diamond Microstrip Detectors''},
+  A.~Narayan {\it et al.};
+  arXiv:1509.06642 [nucl-ex];
+  %DOI:10.1103/PhysRevX.6.011013
+  Phys.\ Rev.\ X {\bf 6}, no. 1, 011013 (2016);
+  %JLAB-PHY-15-2108
+  %(Sep 22, 2015)
+  %\href{http://inspirehep.net/record/1394432}{HEP entry}
+  %3 citations counted in INSPIRE as of 12 Nov 2016
+  \cite{Narayan:2015aua}.
+
 \end{itemize}
 
 %---------------------------------------------------------------------------
@@ -226,85 +223,14 @@ Department of Physics, University of Michigan, Ann Arbor, MI
  \setlength{\parskip}{0pt}
  \setlength{\parsep}{0pt}
 
- \item {\bf W\&M Physics REU Coordinator (2011--present):} The PI has been the coordinator of the long-running physics REU program at W\&M since 2011. Under his tenure the program has revitalized and broadened participation by underrepresented groups.
+ \item {\bf W\&M Physics REU Coordinator:} The PI has been the coordinator of the long-running physics REU program at W\&M from 2011 through 2015. Combined with his position on the graduate admissions committee, he has many contacts and collaborators at local colleges (including Norfolk State University, Virginia Union University, Hampton University, Christopher Newport University, and Old Dominion University).
 
- \item {\bf Chair of the Jefferson Lab Promising Young Physicist program (2012--2015):} This program supports the career development of Jefferson Lab-affiliated postdoctoral researchers by providing them with opportunities for colloquium presentations and mock job interviews.
+ \item {\bf Co-PI of the Jefferson Lab Promising Young Physicist program} which supports the career development of Jefferson Lab-affiliated postdocs by providing them with opportunities for colloquium presentations and organizing mock job interviews. Deconinck was PI of the program from 2011 through 2015, before transferring the leadership to a former participant.
 
- \item {\bf Sex and gender diversity in physics (2010--present):} The PI is a founding member of LGBT+Physicists, a national group aiming to improve gender and sexual diversity in physics, and he serves on the APS ad-hoc committee on LGBT issues.
-
-\end{itemize}
-
-%---------------------------------------------------------------------------
-
-\subsubsection*{Collaborators}
-\begin{itemize}
- \setlength{\itemsep}{0pt}
- \setlength{\parskip}{0pt}
- \setlength{\parsep}{0pt}
- \item Postdoctoral collaborators: A.~Bernstein (MIT), D.~Hornidge (Mount Allison University).
- \item Collaborators at Jefferson Lab: \Qweak\ collaborators~\cite{PhysRevLett.111.141803}; Hall A collaborators~\cite{PhysRevLett.111.082501}; HAPPEx collaboration~\cite{PhysRevLett.108.102001}; PREx collaborators~\cite{PhysRevLett.108.112502}; \Moller\ collaboration~\cite{Proposal:Moller}; SoLID PV-DIS collaborators~\cite{Proposal:SoLID-PVDIS}.
- \item Collaborators at DESY, Germany: HERMES collaboration~\cite{PhysRevD.87.074029}.
- \item Collaborators at University of Mainz, Germany: Kurt Aulenbacher, Patricia Aguar Bartolome, Valery Tioukine; A4 collaboration~\cite{PhysRevLett.102.151803}.
-\end{itemize}
-
-\subsubsection*{Advisers}
-\begin{itemize}
- \setlength{\itemsep}{0pt}
- \setlength{\parskip}{0pt}
- \setlength{\parsep}{0pt}
- \item Postdoctoral sponsors (2): Prof.~Stanley~B.~Kowalski (MIT),  Dr.~Wolf-Dieter~Nowak (Deutsches Elektronen Synchrotron)
- \item Graduate advisor (1): Prof. Wolfgang B.~Lorenzon (University of Michigan)
-\end{itemize}
-
-\subsubsection*{Research advisees}
-\begin{itemize}
-\setlength{\itemsep}{0pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item Ph.D.~students supervised as an assistant professor: 4; J.~C.~Cornejo (now at Carnegie Mellon University); V.~Gray, K.~Bartlett, M.~Beebe (in progress at W\&M).
-% Juan Carlos Cornejo (2010, Compton photon detector)
-% Valerie Gray (2012, Qweak tracking and simulations)
-% Melissa Beebe (2013, MOLLER simulations)
-% Kurtis Bartlett (2013, Qweak simulations)
-%
-\item Ph.D.~students supervised as a postdoctoral researcher: 2.
-% Amrendra Narayan (2008--2010, electron detector)
-% Jie Pan (2009, momentum reconstruction)
-%
-\item Undergraduate students supervised in past five years: 25.
-% Marcus Hendricks (summer 2009, Qweak tracking, 2d event display)
-% Derek Jones (summer 2010, Qweak tracking, 2d event display)
-% Juan Carlo Cornejo (summer 2010, Qweak tracking, 3d event display)
-% David Zou (summer 2010, Qweak tracking, on/offline tracking GUI)
-% Zach Addison (summer 2010, Qweak tracking, 3d event display)
-% Andrew Kubera (summer 2010, Moller polarimeter, C++ port of Fortran analyzer)
-% David Specht (spring/summer 2011, Qweak beam corrections)
-% Rachel Taverner (spring 2011, Qweak beam corrections, summer/fall 2013, spring 2014, Qweak track reconstruction)
-% Quinn Hailes (summer 2012, Qweak track reconstruction)
-% Jonathan Rigby (fall 2012, Qweak track reconstruction)
-% Christopher Haufe (spring/summer/fall 2013, summer 2015, MOLLER simulations)
-% Jack Anderson (spring/summer/fall 2013, SoLID simulations)
-% Adora Smith (summer 2013, GENIE)
-% Nathan Miles (summer 2013, GENIE)
-% Marcus Starman (fall 2013, MOLLER simulations)
-% Rachel Hyneman (fall 2013, Compton simulations)
-% Melissa Guidry (fall 2013, Qweak simulations)
-% Karen Ficenec (summer 2015, 3D printing of scintillators)
-% Jacob McCormick (summer 2015-fall 2015, 3D printing of scintillators)
-% Jacob Elledge (summer 2015, hyperon asymmetries in Qweak)
-% Oscar Deaver (summer 2014-spring 2015, multianode PMT testing)
+ \item {\bf Sex and gender diversity in physics:} The PI is a member of LGBT+Physicists, a national group aiming to improve gender and sexual diversity in physics.  He was co-organizer of sessions at the 2012 and 2013 APS March meetings about the climate for sexual minorities. He was co-auther of an influential report on the status of LGBT people in physics\,\cite{APS:LGBT2016}.
+ 
+ \item {\bf Gender \& Race in the Physical Sciences:} The PI has developed and taught (in Fall 2015 and Spring 2016, both times as an overload) a novel course on the impact of gender and race on who participates in the scientific enterprise in the United States. The discussion-based course has been popular primarily with white women and students of color in the sciences. The PI will continue to offer this course regularly in the future. All course materials are available as a open educational resource under a Creative Commons license\,\cite{CC-BY-SA}.
+ 
+ \item {\bf Makerspaces and Physics Innovation and Entrepreneurship (PIE):} Research indicates that retention of underrepresented physics students is improved by providing examples of actual career outcomes. Through the founding of the Small Hall Makerspace (since 2013) and the development of a new curricular track in ``Engineering Physics and Applied Design,'' the PI is active in enabling students to build skills that will be valuable outside academia.
 
 \end{itemize}
-
-%%---------------------------------------------------------------------------%%
-
-% Bibliography
-\newpage
-\setcounter{page}{1}
-%%% BibTeX %%%
-\bibliographystyle{unsrtnat}
-\bibliography{bibliography}
-%%% BibLaTeX %%%
-%\printbibliography
-
-\end{document}

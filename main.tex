@@ -1,0 +1,162 @@
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This is English
+\usepackage[american]{babel}
+
+% Use various AMS packages (for formulas)
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsxtra}
+\usepackage{nicefrac}
+
+% Elaborate author lists
+\usepackage{authblk}
+
+% Figures
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}  % multiple images 
+% Set figure search path
+\graphicspath{{.}{figures/}{Figures/}{images/}{Images/}{pictures/}{Pictures/}}
+
+% UTF-8 input
+\usepackage[utf8]{inputenc}
+
+% PGF and TikZ
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{animate}
+\usetikzlibrary{arrows,shapes,trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\usepackage{enumitem}
+\usepackage{listings}
+\lstset{basicstyle=\small\ttfamily,columns=fullflexible,breakindent=0pt,breaklines=true}
+
+% Bibliography
+%%% BibLaTeX %%%
+%\usepackage[backend=bibtex,style=numeric]{biblatex}
+%\addbibresource{bibliography}
+%%% BibTeX %%%
+\usepackage[square,sort&compress,numbers]{natbib}
+\usepackage{doi} % hyperlink doi fields
+\usepackage{bibentry}
+\nobibliography*
+
+% Hyperref for hyperlinks in the pdf file (load this package last)
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Consistent notation of names of experiments
+\newcommand{\Hera}{\textsc{Hera}}
+\newcommand{\Hermes}{\textsc{Hermes}}
+\newcommand{\BaBar}{\textsc{BaBar}}
+\newcommand{\Qweak}{\texorpdfstring{$Q_{{\rm Weak}}$}{Qweak}}
+\newcommand{\boldQweak}{\texorpdfstring{\boldmath$Q_{Weak}$}{Qweak}}
+\newcommand{\Moller}{\texorpdfstring{\textsc{Moller}}{MOLLER}}
+\newcommand{\JLab}{\texorpdfstring{\textsc{JLab}}{JLab}}
+\newcommand{\HIgS}{HI\texorpdfstring{$\gamma$}{g}S}
+
+% Abbreviations in italics
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\apriori}{\textit{a priori}}
+
+% Draft and modification markers
+\newcommand{\draft}{false}
+\newcommand{\modified}[1]{\ifthenelse{\equal{\draft}{true}}{\red{\textbf{#1}}}{}}
+\newcommand{\citationneeded}{\ensuremath{^\mathrm{\textcolor{blue}{[citation~needed]}}}}
+
+% Units
+\newcommand{\unit}[1]{\ensuremath{\,\mathrm{#1}}}
+
+% Eprint template
+\newcommand{\arxiv}[1]{\href{http://arXiv.org/abs/#1}{arXiv:#1}}
+\newcommand{\arxivold}[1]{\href{http://arXiv.org/abs/#1}{arXiv:#1}}
+\newcommand{\arxivnew}[2]{\href{http://arXiv.org/abs/#1}{arXiv:#1 [#2]}}
+\newcommand{\eprint}[1]{\href{http://arXiv.org/abs/#1}{\texttt{#1}}}
+
+% This command creates a box marked ``To Do'' around text.
+% To use type \todo{ insert text here }.
+\newcommand{\todo}[1]{%
+ \vspace{5 mm}\par \noindent%
+ \marginpar{\textsc{todo}}%
+ \framebox{\begin{minipage}[c]{0.97 \textwidth}%
+ \tt #1 \end{minipage}}\vspace{5 mm}\par%
+}
+
+% Attribution
+\newcommand{\attribute}[1]{Taken from reference~\cite{#1}.}
+\newcommand{\attributes}[1]{Taken from references~\cite{#1}.}
+
+
+\def\etal{{\em et al.}}
+\def\psisigma{\sigma^{\psi N}_{\rm tot}}
+\def\psiprimesigma{\sigma^{\psi^\prime N}_{\rm tot}}
+\def\jpsi{J/\psi}
+\def\psiprime{\psi^\prime}
+
+\newcommand{\grad}{\ensuremath{^\circ}} % Grad-Symbol
+\newcommand{\prl}[2]{{\em Phys. Rev. Lett.}         {\bf  #1}, #2 }
+\newcommand{\prd}[2]{{\em Phys. Rev.}               {\bf D#1}, #2 }
+\newcommand{\sci}[2]{{\em Science}                  {\bf  #1}, #2 }
+\newcommand{\pr }[2]{{\em Phys. Rep.}               {\bf  #1}, #2}
+\newcommand{\ibid}{{\em ibid.}}
+\newcommand{\erratum}{Erratum {\em ibid.}}
+\newcommand{\col}{Collaboration}
+\newcommand{\comments}[1]{}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+
+\newpage
+\setcounter{page}{1}
+\setcounter{footnote}{0}
+\include{biosketch}
+
+%---------------------------------------------------------------------------
+
+\newpage
+\setcounter{page}{1}
+\setcounter{footnote}{0}
+\include{collaborators}
+
+%---------------------------------------------------------------------------
+
+% Bibliography
+\newpage
+\setcounter{page}{1}
+%%% BibTeX %%%
+\bibliographystyle{unsrtnat}
+\bibliography{bibliography}
+%%% BibLaTeX %%%
+%\printbibliography
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
