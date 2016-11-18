@@ -1,0 +1,310 @@
+% NSF GPG 16-1 January 25, 2016 
+% Sect II.C.2.f
+%
+% Biographical Sketch(es)
+%
+% (i)	Senior Personnel
+%
+% A biographical sketch (limited to two pages) is required for each individual identified as senior personnel. (See GPG Exhibit II-7 for the definitions of Senior Personnel.) Proposers may elect to use third-party solutions, such as NIH’s SciENcv to develop and maintain their biographical sketch. However, proposers are advised that they are still responsible for ensuring that biographical sketches created using third-party solutions are compliant with NSF proposal preparation requirements.
+%
+% Do not submit any personal information in the biographical sketch. This includes items such as: home address; home telephone, fax, or cell phone numbers; home e-mail address; drivers’ license numbers; marital status; personal hobbies; and the like. Such personal information is not appropriate for the biographical sketch and is not relevant to the merits of the proposal. NSF is not responsible or in any way liable for the release of such material. (See also GPG Chapter III.H).
+%
+% (a) Professional Preparation
+%
+% A list of the individual’s undergraduate and graduate education and postdoctoral training (including location) as indicated below:
+%
+% Undergraduate Institution(s)  Location  Major  Degree & Year
+%
+% Graduate Institution(s)  Location  Major  Degree & Year
+%
+% Postdoctoral Institution(s)  Location  Area  Inclusive Dates (years)
+%
+% (b) Appointments
+%
+% A list, in reverse chronological order, of all the individual's academic/professional appointments beginning with the current appointment.
+%
+% (c) Products
+%
+% A list of:
+% (i) up to five products most closely related to the proposed project; and
+% (ii) up to five other significant products, whether or not related to the proposed project.
+%
+% Acceptable products must be citable and accessible including but not limited to publications, data sets, software, patents, and copyrights. Unacceptable products are unpublished documents not yet submitted for publication, invited lectures, and additional lists of products. Only the list of ten will be used in the review of the proposal.
+%
+% Each product must include full citation information including (where applicable and practicable) names of all authors, date of publication or release, title, title of enclosing work such as journal or book, volume, issue, pages, website and URL or other Persistent Identifier.
+%
+% If only publications are included, the heading "Publications" may be used for this section of the Biographical Sketch.
+%
+% (d) Synergistic Activities
+% A list of up to five examples that demonstrate the broader impact of the individual’s professional and scholarly activities that focuses on the integration and transfer of knowledge as well as its creation. Examples could include, among others: innovations in teaching and training (e.g., development of curricular materials and pedagogical methods); contributions to the science of learning; development and/or refinement of research tools; computation methodologies, and algorithms for problem-solving; development of databases to support research and education; broadening the participation of groups underrepresented in STEM; and service to the scientific and engineering community outside of the individual’s immediate organization.
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliography
+%%% BibLaTeX %%%
+%\usepackage[backend=bibtex,style=numeric]{biblatex}
+%\addbibresource{bibliography}
+%%% BibTeX %%%
+\usepackage[square,sort&compress,numbers]{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+% Hyperref for hyperlinks in the pdf file (load this package last)
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Consistent notation of names of experiments
+\newcommand{\Hera}{\textsc{Hera}}
+\newcommand{\Hermes}{\textsc{Hermes}}
+\newcommand{\BaBar}{\textsc{BaBar}}
+\newcommand{\Qweak}{\texorpdfstring{$Q_{Weak}$}{Qweak}}
+\newcommand{\boldQweak}{\texorpdfstring{\boldmath$Q_{Weak}$}{Qweak}}
+\newcommand{\Moller}{\texorpdfstring{\textsc{Moller}}{MOLLER}}
+\newcommand{\JLab}{\texorpdfstring{\textsc{JLab}}{JLab}}
+\newcommand{\HIgS}{HI\texorpdfstring{$\gamma$}{g}S}
+
+% Abbreviations in italics
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\apriori}{\textit{a priori}}
+\newcommand{\etal}{\textit{et al.}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Opening
+\title{Biographical Sketch: Wouter Deconinck}
+\author{Wouter Deconinck}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Your Bio should be divided into the following sections
+% (a) Professional Preparation (education):
+% Undergrad, Major, Year
+% Graduate, Major, Year
+% Postdoc, Area, Years-Inclusive
+% (b) Appointments:  most recent first.
+% (c) Products:  5 related to the proposal, and 5 "Other Significant Products"
+% (d) Synergistic Activities (math-enhancing activities that were not
+% part of your main job description, like editorial boards and
+% conference organizing - any Math-related volunteer work.
+% these are often similar to Broader Impacts
+
+% (e) Collaborators & Other Affiliations: (use the following sections)
+% list in alphabetical order, and include current affiliations parenthetically
+% Collaborators and Co-editors: past 48 months.  If none, write "none"
+% Graduate Advisors and Postdoctoral sponsors: (your own, no matter how long ago)
+% Thesis advisor and postgraduate scholar-sponsor:  those you have advised
+% in the past 5 years.  
+% Total number of graduate students advised: X (all time)
+% Total number of postdoctoral scholars sponsored: Y (all time)
+
+\section*{Biographical Sketch: Wouter Deconinck}
+
+\begin{tabular}{ll}
+Address & College of William \& Mary, Department of Physics \\
+        & P.O. Box 8795, Williamsburg, VA 23187 \\
+Phone   & (757) 221-3539 \\
+Email   & wdeconinck@wm.edu \\
+\end{tabular}
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Professional preparation}
+
+\textbf{Undergraduate institutions} \\
+University of Gent (Belgium), M.S. in Engineering Physics, July 2003 \\
+%
+\textbf{Graduate institutions} \\
+University of Michigan, Ph.D. in Physics, April 2008 \\
+%
+\textbf{Postdoctoral institutions} \\
+Deutsches Elektronen-Synchrotron (DESY, Germany), hadronic physics, January--May 2008 \\
+Massachusetts Institute of Technology, electroweak precision measurements, June 2008--June 2010
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Appointments}
+
+\textbf{Assistant professor,} July 2010--present \\
+Department of Physics, College of William \& Mary, Williamsburg, VA \\
+%
+\textbf{Postdoctoral associate,} June 2008--June 2010 \\
+Laboratory for Nuclear Science, Massachusetts Institute of Technology, Cambridge, MA \\
+%
+\textbf{Research fellow} (competitive selection), January--May 2008 \\
+Deutsches Elektronen-Synchrotron (DESY), Germany \\
+%
+\textbf{Research assistant,} July 2003--December 2007 \\
+Department of Physics, University of Michigan, Ann Arbor, MI
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Products closely related to the proposed project\footnotemark{}}
+
+\footnotetext{Due to the size of nuclear and high-energy physics collaborations it is not possible to list all collaborators and affiliations within the constraints of this document.  The full author lists are provided in the references.}
+
+\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \item D.~Androic \etal~
+  \newblock First determination of the weak charge of the proton.
+  \newblock \emph{Phys. Rev. Lett.}, 111:\penalty0 141803, Oct 2013.
+  \cite{PhysRevLett.111.141803}.
+ \item D.~Wang \etal~
+  \newblock Measurements of parity-violating asymmetries in electron-deuteron scattering in the nucleon resonance region.
+  \newblock \emph{Phys. Rev. Lett.}, 111:\penalty0 082501, Aug 2013.
+  \cite{Wang:2013kkc}.
+ \item S.~Abrahamyan \etal~
+  \newblock Measurement of the neutron radius of $^{208}\mathrm{Pb}$ through parity violation in electron scattering.
+  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 112502, Mar 2012{\natexlab{a}}.
+  \cite{PhysRevLett.108.112502}.
+ \item Z.~Ahmed \etal~
+  \newblock New precision limit on the strange vector form factors of the proton.
+  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 102001, Mar 2012.
+  \cite{PhysRevLett.108.102001}.
+ \item S.~{Abeyratne} \etal~
+  \newblock {Science Requirements and Conceptual Design for a Polarized Medium Energy Electron-Ion Collider at Jefferson Lab}.
+  \newblock 2012.
+  \cite{Abeyratne:2012ah}. \label{eic}
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Other significant products}
+\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \item A.~Airapetian \etal~
+  \newblock {Multiplicities of charged pions and kaons from semi-inclusive deep-inelastic scattering by the proton and the deuteron}.
+  \newblock \emph{Phys.Rev.}, D87:\penalty0 074029, 2013.
+  \cite{PhysRevD.87.074029}.
+ \item A.~Airapetian \etal~
+  \newblock {Beam-helicity asymmetry arising from deeply virtual Compton scattering measured with kinematically complete event reconstruction}.
+  \newblock \emph{JHEP}, 1210:\penalty0 042, 2012.
+  \cite{Airapetian:2012pg}.
+ \item X.~Qian \etal~
+  \newblock {Single Spin Asymmetries in Charged Pion Production from Semi-Inclusive Deep Inelastic Scattering on a Transversely Polarized $^{3}\mathrm{He}$ Target at ${Q}^{2}=1.4\,2.7\,{\mathrm{GeV}}^{2}$}.
+  \newblock \emph{Phys. Rev. Lett.}, 107\penalty0 (7):\penalty0 072003, Aug 2011.
+  \cite{PhysRevLett.107.072003}.
+ \item J.~Huang \etal~
+  \newblock Beam-target double-spin asymmetry ${A}_{\mathrm{LT}}$ in charged pion production from deep inelastic scattering on a transversely polarized $^{3}\mathrm{He}$ target at $1.4 < {Q}^{2} < 2.7\,{\mathrm{GeV}}^{2}$.
+  \newblock \emph{Phys. Rev. Lett.}, 108:\penalty0 052001, Jan 2012.
+  \cite{PhysRevLett.108.052001}.
+ \item Z.~W.~Zhao \etal~
+  \newblock {EM Calorimeters for SoLID at Jefferson Lab}.
+  \newblock \emph{Journal of Physics: Conference Series}, 404\penalty0 (1):\penalty0 012020, 2012.
+  \cite{1742-6596-404-1-012020}.
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Synergistic activities}
+\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+
+ \item {\bf W\&M Physics REU Coordinator (2011--present):} The PI has been the coordinator of the long-running physics REU program at W\&M since 2011. Under his tenure the program has revitalized and broadened participation by underrepresented groups.
+
+ \item {\bf Chair of the Jefferson Lab Promising Young Physicist program (2012--2015):} This program supports the career development of Jefferson Lab-affiliated postdoctoral researchers by providing them with opportunities for colloquium presentations and mock job interviews.
+
+ \item {\bf Sex and gender diversity in physics (2010--present):} The PI is a founding member of LGBT+Physicists, a national group aiming to improve gender and sexual diversity in physics, and he serves on the APS ad-hoc committee on LGBT issues.
+
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\subsubsection*{Collaborators}
+\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \item Postdoctoral collaborators: A.~Bernstein (MIT), D.~Hornidge (Mount Allison University).
+ \item Collaborators at Jefferson Lab: \Qweak\ collaborators~\cite{PhysRevLett.111.141803}; Hall A collaborators~\cite{PhysRevLett.111.082501}; HAPPEx collaboration~\cite{PhysRevLett.108.102001}; PREx collaborators~\cite{PhysRevLett.108.112502}; \Moller\ collaboration~\cite{Proposal:Moller}; SoLID PV-DIS collaborators~\cite{Proposal:SoLID-PVDIS}.
+ \item Collaborators at DESY, Germany: HERMES collaboration~\cite{PhysRevD.87.074029}.
+ \item Collaborators at University of Mainz, Germany: Kurt Aulenbacher, Patricia Aguar Bartolome, Valery Tioukine; A4 collaboration~\cite{PhysRevLett.102.151803}.
+\end{itemize}
+
+\subsubsection*{Advisers}
+\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \item Postdoctoral sponsors (2): Prof.~Stanley~B.~Kowalski (MIT),  Dr.~Wolf-Dieter~Nowak (Deutsches Elektronen Synchrotron)
+ \item Graduate advisor (1): Prof. Wolfgang B.~Lorenzon (University of Michigan)
+\end{itemize}
+
+\subsubsection*{Research advisees}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\item Ph.D.~students supervised as an assistant professor: 4; J.~C.~Cornejo (now at Carnegie Mellon University); V.~Gray, K.~Bartlett, M.~Beebe (in progress at W\&M).
+% Juan Carlos Cornejo (2010, Compton photon detector)
+% Valerie Gray (2012, Qweak tracking and simulations)
+% Melissa Beebe (2013, MOLLER simulations)
+% Kurtis Bartlett (2013, Qweak simulations)
+%
+\item Ph.D.~students supervised as a postdoctoral researcher: 2.
+% Amrendra Narayan (2008--2010, electron detector)
+% Jie Pan (2009, momentum reconstruction)
+%
+\item Undergraduate students supervised in past five years: 25.
+% Marcus Hendricks (summer 2009, Qweak tracking, 2d event display)
+% Derek Jones (summer 2010, Qweak tracking, 2d event display)
+% Juan Carlo Cornejo (summer 2010, Qweak tracking, 3d event display)
+% David Zou (summer 2010, Qweak tracking, on/offline tracking GUI)
+% Zach Addison (summer 2010, Qweak tracking, 3d event display)
+% Andrew Kubera (summer 2010, Moller polarimeter, C++ port of Fortran analyzer)
+% David Specht (spring/summer 2011, Qweak beam corrections)
+% Rachel Taverner (spring 2011, Qweak beam corrections, summer/fall 2013, spring 2014, Qweak track reconstruction)
+% Quinn Hailes (summer 2012, Qweak track reconstruction)
+% Jonathan Rigby (fall 2012, Qweak track reconstruction)
+% Christopher Haufe (spring/summer/fall 2013, summer 2015, MOLLER simulations)
+% Jack Anderson (spring/summer/fall 2013, SoLID simulations)
+% Adora Smith (summer 2013, GENIE)
+% Nathan Miles (summer 2013, GENIE)
+% Marcus Starman (fall 2013, MOLLER simulations)
+% Rachel Hyneman (fall 2013, Compton simulations)
+% Melissa Guidry (fall 2013, Qweak simulations)
+% Karen Ficenec (summer 2015, 3D printing of scintillators)
+% Jacob McCormick (summer 2015-fall 2015, 3D printing of scintillators)
+% Jacob Elledge (summer 2015, hyperon asymmetries in Qweak)
+% Oscar Deaver (summer 2014-spring 2015, multianode PMT testing)
+
+\end{itemize}
+
+%%---------------------------------------------------------------------------%%
+
+% Bibliography
+\newpage
+\setcounter{page}{1}
+%%% BibTeX %%%
+\bibliographystyle{unsrtnat}
+\bibliography{bibliography}
+%%% BibLaTeX %%%
+%\printbibliography
+
+\end{document}
